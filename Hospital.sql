@@ -1,0 +1,34 @@
+create database HOSPITAL;
+use HOSPITAL;
+create table DOCTOR
+(ID int not null primary key,
+D_NAME varchar(30),
+DEPT varchar(30),
+SEX varchar(5),
+Experience int);
+
+SHOW TABLES;
+DESCRIBE DOCTOR;
+INSERT INTO DOCTOR
+VALUES ('101', 'JOHN', 'ENT', 'M', '12');
+INSERT INTO DOCTOR
+VALUES ('102', 'SMITH', 'ORTHOPEDIC', 'M', '5');
+INSERT INTO DOCTOR
+VALUES ('103', 'GEORGE', 'CARDIOLOGY', 'M', '10');
+INSERT INTO DOCTOR
+VALUES ('104', 'LARA', 'SKIN', 'F', '3');
+INSERT INTO DOCTOR
+VALUES ('105', 'K GEORGE', 'MEDICINE', 'F', '9');
+INSERT INTO DOCTOR
+VALUES ('106', 'LUCY', 'ENT', 'F', '3');
+
+SELECT * FROM DOCTOR;
+create table SALARY
+(ID int not null primary key,
+BASIC BIGINT,
+ALLOWENCE bigint,
+CONSULTATION int);
+
+INSERT INTO SALARY
+VALUES('101','12000','1000','300');
+USE HOSPITAL;
